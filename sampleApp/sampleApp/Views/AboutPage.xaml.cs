@@ -11,5 +11,10 @@ namespace sampleApp.Views
         {
             InitializeComponent();
         }
+
+        private void MyButton_Clicked(object sender, EventArgs e)
+        {
+            MyLabel.Text = "Hello, World";
+        }
     }
 }
