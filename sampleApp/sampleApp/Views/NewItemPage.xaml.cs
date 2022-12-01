@@ -1,0 +1,21 @@
+﻿using sampleApp.Models;
+using sampleApp.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace sampleApp.Views
+{
+    public partial class NewItemPage : ContentPage
+    {
+        public Item Item { get; set; }
+
+        public NewItemPage()
+        {
+            InitializeComponent();
+            BindingContext = new NewItemViewModel();
+        }
+    }
+}
